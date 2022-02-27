@@ -1,0 +1,31 @@
+.title {
+    // font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 62px;
+    line-height: 78px;
+    letter-spacing: 2px;
+}
+
+.title-icon {
+    width: 128px;
+    height: 128px;
+}
+
+.mainbody {
+    position: absolute;
+    top: 40px;
+    /* Header Height */
+    bottom: 30vh;
+    /* Footer Height */
+    width: 100%;
+}
+
+.form-control {
+    height: 50px;
+}
+
+.subtitle {
+    color: white
+}
