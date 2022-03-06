@@ -1,9 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
-.bkg {
+#bkg {
     height: 100vh;
     background-image: url("../assets/images/morningsky.jpg");
     // background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+body {
+    min-width: 1000px;
+    /* Suppose you want minimum width of 1000px */
+    /* Firefox will set width as auto */
+    width: 1000px;
+    min-height: 800px;
+    /* As IE6 ignores !important it will set width as 1000px; */
 }
