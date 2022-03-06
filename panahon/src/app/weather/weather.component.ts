@@ -136,7 +136,7 @@ export class WeatherComponent implements OnInit {
     if (!title) return;
 
     console.log(timeNow >= 0);
-    if (timeNow >= this.EVENING || (timeNow >= 0 && timeNow < this.MORNING))
+    if (timeNow >= this.AFTERNOON || (timeNow >= 0 && timeNow < this.MORNING))
       title.style.color = 'white';
     else title.style.color = 'black';
   }

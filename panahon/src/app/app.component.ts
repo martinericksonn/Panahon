@@ -15,9 +15,9 @@ export class AppComponent implements OnInit {
 
     var timeNow = new Date().getHours();
     var image = document.getElementById('bkg');
-
+    console.log('ahjsdjashduwh');
+    console.log(image);
     if (!image) return;
-
     if (timeNow >= EVENING || (timeNow >= 0 && timeNow < MORNING))
       image.style.backgroundImage = "url('../assets/images/nightsky.jpeg')";
     else if (timeNow >= AFTERNOON)

@@ -18,6 +18,7 @@ export class SearchComponent implements OnInit {
   ngOnInit(): void {
     const AFTERNOON = 15;
     const MORNING = 6;
+    const EVENING = 19;
 
     var timeNow = new Date().getHours();
     var title = document.getElementById('title');
@@ -27,9 +28,12 @@ export class SearchComponent implements OnInit {
     if (!(title && subTitle)) return;
 
     console.log(timeNow);
-    if (timeNow >= AFTERNOON || (timeNow >= 0 && timeNow < MORNING)) {
+    if (timeNow >= EVENING || (timeNow >= 0 && timeNow < MORNING)) {
       title.style.color = 'white';
       subTitle.style.color = 'white';
+    } else if (timeNow >= AFTERNOON) {
+      title.style.color = 'white';
+      subTitle.style.color = 'black';
     } else if (timeNow >= MORNING) {
       title.style.color = 'black';
       subTitle.style.color = 'black';
