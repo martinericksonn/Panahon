@@ -1,4 +1,4 @@
-.title {
+#title {
     // font-family: Arial, Helvetica, sans-serif;
     color: #000000;
     font-style: normal;
@@ -26,6 +26,10 @@
     height: 50px;
 }
 
-.subtitle {
+#subtitle {
     color: white
+}
+
+#form1 {
+    background-color: rgba(255, 255, 255, .7)
 }
