@@ -103,6 +103,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "panahon:build:production",
+            "firebaseProject": "appsdev-79e1d",
+            "firebaseHostingSite": "appsdev-79e1d"
+          }
         }
       }
     }

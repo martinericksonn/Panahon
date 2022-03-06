@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "appsdev-79e1d"
+  },
+  "targets": {
+    "appsdev-79e1d": {
+      "hosting": {
+        "panahon": [
+          "appsdev-79e1d"
+        ]
+      }
+    }
+  }
+}

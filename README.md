@@ -1,4 +1,4 @@
-## <b>Panahon
+# <b>Panahon
 
 Weather web app  
 link: https://appsdev-79e1d.web.app/
@@ -19,6 +19,8 @@ link: https://appsdev-79e1d.web.app/
 
 ## Web preview
 
+UPDATE: I changed the backgroud to static png from gif to speed up the loading time.
+
 ### Weather it up in the morning
 
 ![](morning.gif)
@@ -30,8 +32,6 @@ link: https://appsdev-79e1d.web.app/
 ### Laze off at night
 
 ![](night.gif)
-
-<br />
 <br />
 
 ## API
