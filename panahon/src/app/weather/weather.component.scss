@@ -1,0 +1,81 @@
+#title {
+    // font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 78px;
+    letter-spacing: 2px;
+}
+
+#icon {
+    height: 22vh;
+}
+
+#icon-sm {
+    height: 12vh;
+}
+
+#flagQuery {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.temp {
+    color: #000000;
+    font-size: 52px;
+}
+
+.title-icon {
+    width: 74px;
+    height: 74px;
+}
+
+.header {
+    height: 12vh;
+    /* Header Height */
+    /* Footer Height */
+    width: 100%;
+    cursor: pointer;
+}
+
+.mainbody {
+    background-color: rgba(255, 255, 255, .2);
+    /* Header Height */
+    bottom: 30vh;
+    /* Footer Height */
+    width: 100%;
+}
+
+.form-control {
+    height: 50px;
+}
+
+#subtitle {
+    color: white
+}
+
+#form1 {
+    background-color: rgba(220, 220, 220, .7)
+}
+
+.icon-text {
+    padding-left: 1rem;
+}
+
+.search-bar {
+    padding-right: 1rem;
+}
+
+.main-card {
+    background-color: #FFFFFF99;
+    height: 30vh;
+    // background-color: rgb(225, 225, 225)
+}
+
+.sub-card {
+    background-color: #FFFFFF99;
+    // width: 13.5rem;
+    height: 40vh;
+    width: 22vh
+}

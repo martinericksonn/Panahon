@@ -1,1 +1,56 @@
-<p>weather works!</p>
+<div class="h-100 d-flex flex-column align-items-center">
+
+    <div class="header d-flex flex-row justify-content-between  w-75 align-items-center">
+        <div (click)="titleClick()" class="d-flex icon-text">
+            <img class="title-icon p-2" src="assets/icons/panahon.png" alt="" />
+
+            <div id="title"><b>Panahon</b></div>
+        </div>
+        <div class="search-bar  w-50 input-group   ">
+            <input (keyup.enter)="onSubmit()" [formControl]="fcSearch" id="form1" type="search" class="form-control" placeholder="Search your location" aria-label="Search" />
+        </div>
+    </div>
+
+
+    <div *ngIf="flag; else elseBlock" class="d-flex align-items-center justify-content-center  h-50 w-100">
+        <div id="flagQuery">{{query}}</div>
+    </div>
+
+    <ng-template #elseBlock d-flex class=" mainbody d-flex flex-grow-1 flex-column  align-items-center ">
+        <div class="d-flex flex-row main-card  p-2 mt-5 mb-2  w-75">
+            <div class="d-flex flex-column w-50 align-items-left justify-content-between">
+                <div class="d-flex flex-column p-3">
+                    <div class="fw-bold fs-1 lh-sm">{{weather["location"]["city"]}}</div>
+                    <div class="fw-bold fs-5 lh-sm">{{weather["location"]["country"]}}</div>
+                </div>
+                <div class="d-flex flex-column p-3">
+                    <div class="fw-bold fs-5">{{timeWithPipe}}</div>
+                    <div class=" fw-bold fs-5">{{dateWithPipe}}</div>
+                </div>
+            </div>
+            <div class="d-flex flex-grow-1  align-items-center justify-content-end">
+                <div class="temp fw-bold">
+                    {{fahrenheitToCelcius(weather["current_observation"]["condition"]["temperature"])}}</div>
+            </div>
+            <div class="d-flex flex-column  w-25 align-items-center ">
+                <div class="d-flex flex-grow-1  align-items-center"><img id="icon" alt="My image name" src="./assets/icons/{{updateIcon(weather['current_observation']['condition']['text'])}}.png">
+                </div>
+                <div class="h-25  d-flex   fw-bold fs-3">
+                    {{weather["current_observation"]["condition"]["text"]}}</div>
+            </div>
+        </div>
+
+        <div class="pt-4 d-flex flex-row  w-75 justify-content-between ">
+            <div class="p-1 sub-card d-flex flex-column align-items-center justify-content-around" *ngFor="let number of numbers">
+                <div class=" fs-4">{{expandDay(weather["forecasts"][number+1]['day'])}}</div>
+                <div class="fs-1">{{fahrenheitToCelcius(weather["forecasts"][number+1]['high'])}}</div>
+                <div class="d-flex flex-column align-items-center">
+                    <img id="icon-sm" alt="weather icon" src="./assets/icons/{{updateIcon(weather['forecasts'][number+1]['text'])}}.png">
+                    <div class=" text-wrap fs-6 text-center lh-sm">{{weather["forecasts"][number+1]['text']}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+
+</div>
